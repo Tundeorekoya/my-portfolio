@@ -1,7 +1,7 @@
 
 const Data = () => {
   return (
-    <div>
+    <div className="home-data">
       <h1 className="home-title"> Tunde Orekoya
       <svg
                   width="36"
@@ -53,8 +53,8 @@ const Data = () => {
                   ></path>
                 </svg>
       </h1>
-      <h3 className="home-subtitle">Frontend Developer</h3>
-      <p className="home-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br/>Mollitia velit natus quae atque illum enim oditbr nam  <br/>cumque quibusdam veritatis pariatur  <br/>repudiandae consequuntur similique saepe.
+      <h3 className="home-subtitle ">Frontend Developer</h3>
+      <p className="home-description ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br/>Mollitia velit natus quae atque illum enim oditbr nam  <br/>cumque quibusdam veritatis pariatur  <br/>repudiandae consequuntur similique saepe.
        Beatae obcaecati aliquid inventore maxime.</p>
       
       <a href="#contact" className="button button-flex">
