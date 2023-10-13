@@ -75,7 +75,8 @@
    
 }
 .home-scroll{
-    margin-left: 9.25rem;
+    display: flex;
+    justify-content: center;
 }
 .wheel{
     animation: scroll 2s infinite;
@@ -138,6 +139,7 @@
 
   }
   @media screen and (max-width: 768px) {
+ 
     .home-content{
         grid-template-columns: 0.5fr 3fr;
         padding-top: 3.5rem ;
@@ -170,10 +172,9 @@
        height: 200px;
     }
     .home-scroll{
-        position: relative;
-        top: -5rem;
-        left: 3rem;
-
+       display: flex;
+       align-items: center;
+       margin: 0;
     }
     .button-flex{
         display: none;
@@ -198,9 +199,6 @@
        font-size: 16px;
        line-height: 20px;
     }
-    .home-scroll{
-     
-   }
      }
   @media screen and (max-width: 350px) {
  .home-img{
@@ -220,10 +218,5 @@
     font-size: 12px;
     line-height: 18px;
  }
- .home-scroll{
-    position: relative;
-    top: -5rem;
-    left: 1.0rem;
 
 }
-  }
