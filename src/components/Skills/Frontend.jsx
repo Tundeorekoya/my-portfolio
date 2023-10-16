@@ -46,23 +46,18 @@ const Frontend = () => {
                         <span className='Skill-level'>intermediate</span>
                     </div>
                 </div>
-
-                <div className='skill-data'>
-                    <i class='bx bx-badge-check'></i>
-
-                    <div>
-                        <h3 className='skill-name'></h3>
-                        <span className='Skill-level'></span>
-                    </div>
-                </div>
             </div>
+
+
+
+                {/* tag */}
 
             <div className='skill-group'>
                 <div className='skill-data'>
                     <i class='bx bx-badge-check'></i>
 
                     <div>
-                        <h3 className='skill-name'>React</h3>
+                        <h3 className='skill-name'> React</h3>
                         <span className='Skill-level'>intermediate</span>
                     </div>
                 </div>
@@ -73,7 +68,7 @@ const Frontend = () => {
 
                     <div>
                         <h3 className='skill-name'>TypeScript</h3>
-                        <span className='Skill-level'>beginner</span>
+                        <span className='Skill-level'>Basic</span>
                     </div>
                 </div>
 
@@ -83,30 +78,23 @@ const Frontend = () => {
                     <i class='bx bx-badge-check'></i>
 
                     <div>
-                        <h3 className='skill-name'>Git & GitHub</h3>
+                        <h3 className='skill-name'>Git & Github</h3>
                         <span className='Skill-level'>intermediate</span>
                     </div>
                 </div>
 
 
-                {/* <div className='skill-data'>
+                <div className='skill-data'>
                     <i class='bx bx-badge-check'></i>
 
                     <div>
-                        <h3 className='skill-name'></h3>
-                        <span className='Skill-level'></span>
+                        <h3 className='skill-name'>tail Wind</h3>
+                        <span className='Skill-level'>intermediate</span>
                     </div>
-                </div> */}
-
-                {/* <div className='skill-data'>
-                    <i class='bx bx-badge-check'></i>
-
-                    <div>
-                        <h3 className='skill-name'></h3>
-                        <span className='Skill-level'></span>
-                    </div>
-                </div> */}
+                </div>
             </div>
+                
+           
         </div>
     </div>
   )
