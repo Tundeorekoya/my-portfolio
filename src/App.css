@@ -9,9 +9,9 @@
    --sat:0%;
    --title-color: hsl(var(--hue), var(--sat),20%);
    --title-color-dark: hsl(var(--hue), var(--sat),0%);
-   --text-color: hsl(var(--hue),var(--sat),46%);
-   --body-color: hsl(var(--hue), var(--sat), 98%);
-   --container-color: #fff;
+   --text-color: hsl(var(--hue),var(--sat),2%);
+   --body-color: hsl(var(--hue), var(--sat), 75%);
+   --container-color: #DFDFDE;
 
     /* FONTS AND TYPOGRAPHY */
 
@@ -138,7 +138,7 @@ img{
   background-color: var(--title-color);
   color: var(--container-color);
   padding: 1.25rem 2rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   font-weight: var(--font-medium);
 }
 
