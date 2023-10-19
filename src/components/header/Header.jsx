@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Header.css'
+import { motion } from 'framer-motion'
 
 const Header = () => {
     const[toggle, setToggle] = useState(false)
@@ -8,7 +9,8 @@ const Header = () => {
     <div>
     <div className="header">
         <nav className='nav container'>
-            <h1 href="home" className='nav-logo'>Tunde</h1>
+            <motion.h1 href="home" className='nav-logo'  initial={{opacity:0, scale:1}} 
+            animate={{opacity:1, scale:1}} transition={{duration:0.5}}>Tunde</motion.h1>
 
           <div className= { toggle? "nav-menu show-menu": "nav-menu"} >
             <ul className='nav-list grid '>

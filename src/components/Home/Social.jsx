@@ -1,8 +1,29 @@
 import React from 'react'
 
 const Social = () => {
+  const textVariant ={
+    initial: {
+      x: -500,
+      opacity: 0,
+
+    },
+    initial: {
+      x: -500,
+      opacity: 0,
+
+    },
+    animate: {
+      x: 0,
+      transition: {
+        duration:1,
+        staggerChildren:0.1,
+      },
+
+
+    }
+  }
   return (
-    <div className='home-social'>
+    <d className='home-social' >
         <a href="https://instagram.com" className='home-social-icon' target='_blank'>
             <i class='uil uil-linkedin'></i>
         </a>
@@ -18,7 +39,7 @@ const Social = () => {
 
         </a>
 
-    </div>
+    </d>
   )
 }
 
