@@ -57,7 +57,7 @@ const Data = () => {
       <p className="home-description ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br/>Mollitia velit natus quae atque illum enim oditbr nam  <br/>cumque quibusdam veritatis pariatur  <br/>repudiandae consequuntur similique saepe.
        Beatae obcaecati aliquid inventore maxime.</p>
       
-      <a href="#contact" className="button button-flex">
+      <button href="#contact" className="button button-flex">
         Say hello
         <svg
                   class="button__icon"
@@ -77,7 +77,7 @@ const Data = () => {
                     fill="var(--container-color)"
                     ></path>
                 </svg>
-      </a>
+      </button>
     </div>
   )
 }

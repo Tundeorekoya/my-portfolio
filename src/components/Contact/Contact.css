@@ -1,0 +1,20 @@
+.contact-container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 6rem;
+    padding-bottom: 3rem;
+}
+.contact-title{
+    text-align: center;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+}
+.contact-info{
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 300px;
+}
+.contact-form{
+    width: ;
+}
