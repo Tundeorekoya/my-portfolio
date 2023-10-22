@@ -69,15 +69,15 @@ font-size: var(--small-font-size);
    
  @media screen and (max-width: 992px) {
    .qualification-container{
-    margin-left: auto;
-    margin-right: auto;
+     margin: 1rem;
+     padding: 1rem;
    }
   }
   @media screen and (max-width: 768px) {
     .qualification-container{
         margin-left: var(--mb-1-5);
-        margin-right:var(--mb-1-5); ;
-       }
+        margin-right:var(--mb-1-5); 
+     }
 
   }
   @media screen and (max-width: 576px) {

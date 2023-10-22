@@ -24,8 +24,8 @@ const Cursors = () => {
 
    const variants= {
   default:{
-    x: mousePosition.x- 16,
-    y: mousePosition.y-16,
+    x: mousePosition.x +5,
+    y: mousePosition.y +5,
   }
  }
  

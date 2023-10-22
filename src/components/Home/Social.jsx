@@ -24,17 +24,17 @@ const Social = () => {
   }
   return (
     <d className='home-social' >
-        <a href="https://instagram.com" className='home-social-icon' target='_blank'>
+        <a href="https://www.linkedin.com/in/tunde-benjamin-733948257/" className='home-social-icon' target='_blank'>
             <i class='uil uil-linkedin'></i>
         </a>
 
-        <a href="https://instagram.com" className='home-social-icon' target='_blank'>
+        <a href="https://github.com/Tundeorekoya" className='home-social-icon' target='_blank'>
         <i class='uil uil-github'></i>
 
         </a>
 
 
-        <a href="https://instagram.com" className='home-social-icon' target='_blank'>
+        <a href="https://wa.me/message/FEHPOO6EDD3LI1" className='home-social-icon' target='_blank'>
         <i class='uil uil-inbox'></i>
 
         </a>

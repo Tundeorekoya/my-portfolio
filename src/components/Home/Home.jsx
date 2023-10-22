@@ -6,21 +6,20 @@ import { motion } from 'framer-motion'
 
 
 const Home = () => {
-  const textVariant ={
+  const textVariant = {
     initial: {
       x: -200,
       opacity: 0,
-
     },
     animate: {
       x: 0,
       opacity: 1,
       transition: {
-        duration:2,
-        staggerChildren:0.1,
+        duration: 2,
+        staggerChildren: 0.1,
       },
     },
-  }
+  };
   return (
     <motion.section className='home section' id='home' variants={textVariant} initial='initial' animate="animate">
         <motion.div className='home-container container grid' variants={textVariant}>

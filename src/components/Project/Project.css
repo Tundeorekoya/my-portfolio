@@ -67,8 +67,10 @@
 }
 @media screen and (max-width: 768px) {
     .work-container{
+        margin: 2rem;
         grid-template-columns: max-content;
     }
+    
 
 }
 @media screen and (max-width: 576px) {

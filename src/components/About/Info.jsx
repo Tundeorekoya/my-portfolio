@@ -1,8 +1,11 @@
-import React from 'react'
+import { motion } from "framer-motion"
+
 
 const Info = () => {
+
+
   return (
-    <div className='about-info grid'>
+    <motion.div className='about-info grid'>
       <div className='about-box'>
         <i class='bx bx-award about-icon'></i>
 
@@ -25,7 +28,7 @@ const Info = () => {
         <h3 className='about-box'>Support</h3>
         <span className='about-subtitle'>Online 24/7</span>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
