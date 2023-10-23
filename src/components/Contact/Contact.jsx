@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   const variants = {
     initial: {
-      y: 100,
+      y: 30,
       opacity: 0,
     },
     animate: {

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const About = () => {
   const variants = {
     initial: {
-      y: 100,
+      y: 30,
       opacity: 0,
     },
     animate: {
@@ -37,10 +37,18 @@ const About = () => {
       >
         About Me
       </motion.h2>
-      <span className="section-subtitle"> My Introduction</span>
+      <motion.span
+        className="section-subtitle"
+        variants={variants}
+        initial="initial"
+        whileInView="animate"
+      >
+        {" "}
+        My Introduction
+      </motion.span>
 
       <div className="about-container container grid">
-        <img src={aboutImg} alt="img" className="about-img" />
+        <motion.img src={aboutImg} alt="img" className="about-img" />
 
         <div className="about-data">
           <Info />

@@ -1,8 +1,26 @@
 import React from 'react'
+import { motion } from 'framer-motion';
+
 
 const Frontend = () => {
+        const variants = {
+          initial: {
+            y: 100,
+            opacity: 0,
+          },
+          animate: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              duration: 0.8,
+              staggerChildren: 0.1,
+            },
+          },
+        };
   return (
-    <div className='skill-content'>
+    <motion.div className='skill-content' variants={variants}
+        initial="initial"
+        whileInView="animate">
         <h3 className='skills-title'>Frontend Developer</h3>
 
         <div className='skill-box'>
@@ -96,7 +114,7 @@ const Frontend = () => {
                 
            
         </div>
-    </div>
+    </motion.div>
   )
 }
 

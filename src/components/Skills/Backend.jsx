@@ -1,95 +1,108 @@
-import React from 'react'
+import { motion } from "framer-motion";
 
 const Backend = () => {
+  const variants = {
+    initial: {
+      y: 100,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.1,
+      },
+    },
+  };
   return (
-    <div className='skill-content'>
-    <h3 className='skills-title'>Backend Developer</h3>
+    <motion.div
+      className="skill-content"
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
+    >
+      <motion.h3 className="skills-title">Backend Developer</motion.h3>
 
-    <div className='skill-box'>
-        <div className='skill-group'>
-            <div className='skill-data'>
-                <i class='bx bx-badge-check'></i>
+      <div className="skill-box">
+        <div className="skill-group">
+          <div className="skill-data">
+            <i class="bx bx-badge-check"></i>
 
-                <div>
-                    <h3 className='skill-name'>PHP</h3>
-                    <span className='Skill-level'>Intermediate</span>
-                </div>
+            <div>
+              <h3 className="skill-name">PHP</h3>
+              <span className="Skill-level">Intermediate</span>
             </div>
+          </div>
 
+          <div className="skill-data">
+            <i class="bx bx-badge-check"></i>
 
-            <div className='skill-data'>
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className='skill-name'>Node Js</h3>
-                    <span className='Skill-level'>intermediate</span>
-                </div>
+            <div>
+              <h3 className="skill-name">Node Js</h3>
+              <span className="Skill-level">intermediate</span>
             </div>
+          </div>
 
+          <div className="skill-data">
+            <i class="bx bx-badge-check"></i>
 
-
-            <div className='skill-data'>
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className='skill-name'>Python</h3>
-                    <span className='Skill-level'>intermediate</span>
-                </div>
+            <div>
+              <h3 className="skill-name">Python</h3>
+              <span className="Skill-level">intermediate</span>
             </div>
+          </div>
 
+          <div className="skill-data">
+            <i class="bx bx-badge-check"></i>
 
-            <div className='skill-data'>
-                <i class='bx bx-badge-check'></i>
-
-                <div>
-                    <h3 className='skill-name'>My SQL</h3>
-                    <span className='Skill-level'>intermediate</span>
-                </div>
+            <div>
+              <h3 className="skill-name">My SQL</h3>
+              <span className="Skill-level">intermediate</span>
             </div>
+          </div>
         </div>
 
-        <div className='skill-group'>
-            <div className='skill-data'>
-                <i class='bx bx-badge-check'></i>
+        <div className="skill-group">
+          <div className="skill-data">
+            <i class="bx bx-badge-check"></i>
 
-                <div>
-                    <h3 className='skill-name'>Fire Base</h3>
-                    <span className='Skill-level'>Basic</span>
-                </div>
+            <div>
+              <h3 className="skill-name">Fire Base</h3>
+              <span className="Skill-level">Basic</span>
             </div>
+          </div>
 
-            <div className='skill-data'>
-                <i class='bx bx-badge-check'></i>
+          <div className="skill-data">
+            <i class="bx bx-badge-check"></i>
 
-                <div>
-                    <h3 className='skill-name'>PHP</h3>
-                    <span className='Skill-level'>Intermediate</span>
-                </div>
+            <div>
+              <h3 className="skill-name">PHP</h3>
+              <span className="Skill-level">Intermediate</span>
             </div>
+          </div>
 
-            <div className='skill-data'>
-                <i class='bx bx-badge-check'></i>
+          <div className="skill-data">
+            <i class="bx bx-badge-check"></i>
 
-                <div>
-                    <h3 className='skill-name'>PHP</h3>
-                    <span className='Skill-level'>Intermediate</span>
-                </div>
+            <div>
+              <h3 className="skill-name">PHP</h3>
+              <span className="Skill-level">Intermediate</span>
             </div>
-         
-            <div className='skill-data'>
-                <i class='bx bx-badge-check'></i>
+          </div>
 
-                <div>
-                    <h3 className='skill-name'>PHP</h3>
-                    <span className='Skill-level'>Intermediate</span>
-                </div>
+          <div className="skill-data">
+            <i class="bx bx-badge-check"></i>
+
+            <div>
+              <h3 className="skill-name">PHP</h3>
+              <span className="Skill-level">Intermediate</span>
             </div>
-    
-
+          </div>
         </div>
-    </div>
-</div>
-  )
-}
+      </div>
+    </motion.div>
+  );
+};
 
-export default Backend
+export default Backend;

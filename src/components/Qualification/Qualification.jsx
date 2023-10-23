@@ -1,170 +1,448 @@
-import { useState } from "react"
-import "./Qualification.css"
+import { useState } from "react";
+import "./Qualification.css";
+import { motion } from "framer-motion";
 
 const Qualification = () => {
-    const [ toggle, SetToggle ] = useState(1)
+  const variants = {
+    initial: {
+      y: 30,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+  const [toggle, SetToggle] = useState(1);
 
-    const toggleTab= (index)=>{
-        SetToggle(index);
-    }
+  const toggleTab = (index) => {
+    SetToggle(index);
+  };
+
   return (
-    <div>
-      <section className=' section qualification-section'>
-        <h2 className='section-title'>Qualification</h2>
-        <span className='section-subtitle'>My Journey</span>
+    <motion.div variants={variants} initial="initial" whileInView="animate">
+      <motion.section
+        className=" section qualification-section"
+        variants={variants}
+        initial="initial"
+        whileInView="animate"
+      >
+        <motion.h2
+          className="section-title"
+          variants={variants}
+          initial="initial"
+          whileInView="animate"
+        >
+          Qualification
+        </motion.h2>
+        <motion.span
+          className="section-subtitle"
+          variants={variants}
+          initial="initial"
+          whileInView="animate"
+        >
+          My Journey
+        </motion.span>
 
-
-        <div className='qualification-container container'>
-        <div className='qualification-tabs'>
-            <div className={toggle === 1 ? "qualification-button qualification-active button--flex":"qualification-button  button--flex"} onClick={()=>toggleTab(1)}>
-                <i className='uil uil-graduation-cap qualification-icon'></i>{ " "}
-                Education
-            </div>
-            <div className='qualification-tabs'>
-            <div className={toggle === 2 ? "qualification-button qualification-active button--flex":"qualification-button  button--flex"} onClick={()=>toggleTab(2)}>
-                <i className='uil uil-briefcase qualification-icon'></i>{ " "}
+        <motion.div
+          className="qualification-container container"
+          variants={variants}
+          initial="initial"
+          whileInView="animate"
+        >
+          <motion.div
+            className="qualification-tabs"
+            variants={variants}
+            initial="initial"
+            whileInView="animate"
+          >
+            <motion.div
+              variants={variants}
+              initial="initial"
+              whileInView="animate"
+              className={
+                toggle === 1
+                  ? "qualification-button qualification-active button--flex"
+                  : "qualification-button  button--flex"
+              }
+              onClick={() => toggleTab(1)}
+            >
+              <i className="uil uil-graduation-cap qualification-icon"></i>{" "}
+              Education
+            </motion.div>
+            <motion.div
+              className="qualification-tabs"
+              variants={variants}
+              initial="initial"
+              whileInView="animate"
+            >
+              <motion.div
+                variants={variants}
+                initial="initial"
+                whileInView="animate"
+                className={
+                  toggle === 2
+                    ? "qualification-button qualification-active button--flex"
+                    : "qualification-button  button--flex"
+                }
+                onClick={() => toggleTab(2)}
+              >
+                <i className="uil uil-briefcase qualification-icon"></i>{" "}
                 Experience
-            </div>
-        </div>
-        </div>
-        
+              </motion.div>
+            </motion.div>
+          </motion.div>
 
-       
+          <motion.div className="qualification-sections">
+            <motion.div
+              variants={variants}
+              initial="initial"
+              whileInView="animate"
+              className={
+                toggle === 1
+                  ? "qualification-content qualification-content-active"
+                  : "qualification-content"
+              }
+            >
+              <motion.div
+                variants={variants}
+                initial="initial"
+                whileInView="animate"
+                div
+                className="qualification-data"
+              >
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <motion.h3
+                    className="qualification-title"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Web Design
+                  </motion.h3>
+                  <motion.span
+                    className="qualification-subtitle"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Yaba-college-0f-tech
+                  </motion.span>
+                  <motion.div
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                    div
+                    className="qualification-calendar"
+                  >
+                    <i className="uil uil-calendar-alt"></i>
+                    2021 - present
+                  </motion.div>
+                </motion.div>
 
-        <div className='qualification-sections'>
-            <div className={toggle=== 1 ? "qualification-content qualification-content-active":"qualification-content"}>
-                <div className="qualification-data">
-                    <div>
-                        <h3 className='qualification-title'>Web Design</h3>
-                        <span className='qualification-subtitle'>Yaba-college-0f-tech</span>
-                        <div className='qualification-calendar'>
-                            <i className='uil uil-calendar-alt'></i>
-                            2021 - present
-                        </div>
-                    </div>
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <span className="qualification-rounder"></span>
+                  <span className="qualification-line"></span>
+                </motion.div>
+              </motion.div>
 
+              <motion.div
+                className="qualification-data"
+                variants={variants}
+                initial="initial"
+                whileInView="animate"
+              >
+                <div></div>
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <motion.span
+                    className="qualification-rounder"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  ></motion.span>
+                  <span
+                    className="qualification-line"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  ></span>
+                </motion.div>
 
-                    <div>
-                        <span className='qualification-rounder'></span>
-                        <span className='qualification-line'></span>
-                    </div>
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <motion.h3
+                    className="qualification-title"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Art Director
+                  </motion.h3>
+                  <motion.span
+                    className="qualification-subtitle"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Yaba-college-0f-tech
+                  </motion.span>
+                  <motion.div
+                    className="qualification-calendar"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    <i className="uil uil-calendar-alt"></i>
+                    2021 - 2022
+                  </motion.div>
+                </motion.div>
+              </motion.div>
+
+              <motion.div
+                className="qualification-data"
+                variants={variants}
+                initial="initial"
+                whileInView="animate"
+              >
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <motion.h3
+                    className="qualification-title"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Web Development
+                  </motion.h3>
+                  <motion.span
+                    className="qualification-subtitle"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Yaba-college-0f-tech
+                  </motion.span>
+                  <motion.div className="qualification-calendar">
+                    <i className="uil uil-calendar-alt"></i>
+                    2018 - 2020
+                  </motion.div>
+                </motion.div>
+
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <motion.span
+                    className="qualification-rounder"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  ></motion.span>
+                  <motion.span className="qualification-line"></motion.span>
+                </motion.div>
+              </motion.div>
+
+              <motion.div
+                className="qualification-data"
+                variants={variants}
+                initial="initial"
+                whileInView="animate"
+              >
+                <div></div>
+                <div>
+                  <motion.span
+                    className="qualification-rounder"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  ></motion.span>
+                  <span className="qualification-line"></span>
                 </div>
 
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <motion.h3
+                    className="qualification-title"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    ux expert
+                  </motion.h3>
+                  <motion.span
+                    className="qualification-subtitle"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Yaba-college-0f-tech
+                  </motion.span>
+                  <div className="qualification-calendar">
+                    <i className="uil uil-calendar-alt"></i>
+                    2017-2018
+                  </div>
+                </motion.div>
+              </motion.div>
+            </motion.div>
 
-                <div className="qualification-data">
-                    <div></div>
-                    <div>
-                        <span className='qualification-rounder'></span>
-                        <span className='qualification-line'></span>
-                    </div>
-                    
-                    <div>
-                        <h3 className='qualification-title'>Art Director</h3>
-                        <span className='qualification-subtitle'>Yaba-college-0f-tech</span>
-                        <div className='qualification-calendar'>
-                            <i className='uil uil-calendar-alt'></i>
-                            2021 - 2022
-                        </div>
-                    </div>
+            <motion.div
+              variants={variants}
+              initial="initial"
+              whileInView="animate"
+              className={
+                toggle === 2
+                  ? "qualification-content qualification-content-active"
+                  : "qualification-content"
+              }
+            >
+              <motion.div
+                className="qualification-data"
+                variants={variants}
+                initial="initial"
+                whileInView="animate"
+              >
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <motion.h3
+                    className="qualification-title"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Product
+                  </motion.h3>
+                  <motion.span
+                    className="qualification-subtitle"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Google-nigeria
+                  </motion.span>
+                  <div className="qualification-calendar">
+                    <i className="uil uil-calendar-alt"></i>
+                    2021 - present
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <span className="qualification-rounder"></span>
+                  <span className="qualification-line"></span>
+                </motion.div>
+              </motion.div>
+
+              <motion.div className="qualification-data">
+                <div></div>
+                <div>
+                  <span className="qualification-rounder"></span>
+                  <span className="qualification-line"></span>
                 </div>
 
-                <div className="qualification-data">
-                    <div>
-                        <h3 className='qualification-title'>Web Development</h3>
-                        <span className='qualification-subtitle'>Yaba-college-0f-tech</span>
-                        <div className='qualification-calendar'>
-                            <i className='uil uil-calendar-alt'></i>
-                            2018 - 2020
-                        </div>
-                    </div>
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <motion.h3
+                    className="qualification-title"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Ui Designer
+                  </motion.h3>
+                  <motion.span
+                    className="qualification-subtitle"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Apple Inc-Nigeria
+                  </motion.span>
+                  <div className="qualification-calendar">
+                    <i className="uil uil-calendar-alt"></i>
+                    2021 - 2022
+                  </div>
+                </motion.div>
+              </motion.div>
 
-
-                    <div>
-                        <span className='qualification-rounder'></span>
-                        <span className='qualification-line'></span>
-                    </div>
+              <motion.div
+                className="qualification-data"
+                variants={variants}
+                initial="initial"
+                whileInView="animate"
+              >
+                <div>
+                  <motion.h3
+                    className="qualification-title"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Web Designer
+                  </motion.h3>
+                  <motion.span
+                    className="qualification-subtitle"
+                    variants={variants}
+                    initial="initial"
+                    whileInView="animate"
+                  >
+                    Figma
+                  </motion.span>
+                  <div className="qualification-calendar">
+                    <i className="uil uil-calendar-alt"></i>
+                    2018 - 2020
+                  </div>
                 </div>
 
+                <motion.div
+                  variants={variants}
+                  initial="initial"
+                  whileInView="animate"
+                >
+                  <span className="qualification-rounder"></span>
+                  <span className="qualification-line"></span>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      </motion.section>
+    </motion.div>
+  );
+};
 
-                <div className="qualification-data">
-                    <div></div>
-                    <div>
-                        <span className='qualification-rounder'></span>
-                        <span className='qualification-line'></span>
-                    </div>
-                    
-                    <div>
-                        <h3 className='qualification-title'>ux expert</h3>
-                        <span className='qualification-subtitle'>Yaba-college-0f-tech</span>
-                        <div className='qualification-calendar'>
-                            <i className='uil uil-calendar-alt'></i>
-                            2017-2018
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div className={toggle=== 2 ? "qualification-content qualification-content-active":"qualification-content"}>
-                <div className="qualification-data">
-                    <div>
-                        <h3 className='qualification-title'>Product</h3>
-                        <span className='qualification-subtitle'>Google-nigeria</span>
-                        <div className='qualification-calendar'>
-                            <i className='uil uil-calendar-alt'></i>
-                            2021 - present
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <span className='qualification-rounder'></span>
-                        <span className='qualification-line'></span>
-                    </div>
-                </div>
-
-
-                <div className="qualification-data">
-                    <div></div>
-                    <div>
-                        <span className='qualification-rounder'></span>
-                        <span className='qualification-line'></span>
-                    </div>
-                    
-                    <div>
-                        <h3 className='qualification-title'>Ui Designer</h3>
-                        <span className='qualification-subtitle'>Apple Inc-Nigeria</span>
-                        <div className='qualification-calendar'>
-                            <i className='uil uil-calendar-alt'></i>
-                            2021 - 2022
-                        </div>
-                    </div>
-                </div>
-
-                <div className="qualification-data">
-                    <div>
-                        <h3 className='qualification-title'>Web Designer</h3>
-                        <span className='qualification-subtitle'>Figma</span>
-                        <div className='qualification-calendar'>
-                            <i className='uil uil-calendar-alt'></i>
-                            2018 - 2020
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <span className='qualification-rounder'></span>
-                        <span className='qualification-line'></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        </div>
-      </section>
-    </div>
-  )
-}
-
-export default Qualification
+export default Qualification;
